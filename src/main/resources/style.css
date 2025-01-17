@@ -1,0 +1,237 @@
+/*@keyframes glowing {*/
+/*    0% { background-position: 0 0; }*/
+/*    50% { background-position: 400% 0; }*/
+/*    100% { background-position: 0 0; }*/
+/*}*/
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.fade {
+    -fx-animation: fadeInOut 3s infinite; /* Apply fade animation to any element */
+}
+
+/*.root ORIGINAL BULLSHIT {*/
+/*    -fx-background-color: linear-gradient(to bottom, #282722, #1e3948);*/
+/*    -fx-animation: fadeInOut 3s infinite;*/
+/*    display: flex;*/
+
+.root {
+    -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
+    -fx-animation: fadeInOut 3s infinite;
+     display: flex;
+}
+/* Universal Button Style */
+/* Universal Button Style */
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-color: #0c83c9;
+    -fx-border-radius: 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+    -fx-background-insets: 0;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.button:hover {
+    -fx-background-color: #007bb5;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button:pressed {
+    -fx-background-color: #005f87;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button.glowing {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 15px 40px;
+    -fx-border-color: #0c83c9;
+    -fx-border-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.8), 20, 0.5, 0, 0); /* Initial glow */
+    -fx-transition: all 0.3s ease-in-out; /* Smooth transition for glow effect */
+}
+
+/* Glow Animation (Programmatically Controlled) */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Text Fields */
+.userName, .passwordField, .txtPasswordField {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-border-color: #0c83c9;
+    -fx-border-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent; /* Removes focus border */
+    -fx-faint-focus-color: transparent;
+    -fx-transition: all 0.3s ease-in-out; /* Smooth transition for focus/blur */
+}
+
+/* Forgot Password Link */
+.forgotPassword {
+    -fx-text-fill: #0c83c9;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+    -fx-transition: color 0.3s ease-in-out; /* Smooth hover effect for link */
+}
+
+/* Forgot Password Hover */
+.forgotPassword:hover {
+    -fx-text-fill: #005f87; /* Slight color change on hover */
+}
+
+/* Title Bar */
+.title-bar {
+    -fx-background-color: #336699;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-padding: -15;
+    -fx-transition: all 0.3s ease-in-out; /* Smooth transitions for any updates */
+}
+
+.title-bar .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+    -fx-transition: all 0.3s ease-in-out; /* Smooth label updates */
+}
+
+.title-bar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Menu Bar */
+.menu-Bar {
+    -fx-background-color: #336699;
+    -fx-text-fill: #ECECEC;
+    -fx-font-size: 14px;
+    -fx-padding: -5px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Dashboard Background */
+.Dashboard {
+    -fx-background-color: linear-gradient(to bottom, #282722, #1e3948);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-animation: fadeInOut 3s infinite;
+}
+
+/* Register Button */
+.register-Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-color: #0c83c9;
+    -fx-border-radius: 20px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.register-Page{
+    -fx-background-color: linear-gradient(to bottom, #282722, #1e3948);
+    -fx-animation: fadeInOut 3s infinite; /* Fade in and out animation */
+
+
+}
+
+/* Side Panel */
+.sidePanel {
+    -fx-background-color: linear-gradient(to bottom, #08375e, #1f4565);
+    -fx-background-insets: 0;
+    -fx-border-style: solid;
+    -fx-border-width: 4px;
+    -fx-font-size: 20px;
+    -fx-border-color:  linear-gradient(to bottom, #08375e, #1f4565);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.home-Button {
+    -fx-background-image: url('assets/home-button.png');
+    -fx-background-size: contain; /* Ensure the image fits within the button */
+    -fx-background-repeat: no-repeat; /* Prevent the image from repeating */
+    -fx-background-position: center; /* Center the background image */
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.product-button{
+    -fx-background-image: url('assets/product-icon.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.sales-ManagementBtn{
+    -fx-background-image: url('assets/sales-management.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.google-login{
+    -fx-background-image: url('assets/google-icon.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.return-MngmntBtn{
+    -fx-background-image: url('assets/return.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.user-MngmntBtn{
+    -fx-background-image: url('assets/user-management.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.Sales-ManagementPage{
+    -fx-background-color: #10557c;
+    -fx-animation: fadeInOut 3s infinite;
+    /*-fx-background-size: contain;*/
+}
+
+.Return-ManagementPage{
+    -fx-background-color: linear-gradient(to bottom, #706637, #10557c);
+    -fx-animation: fadeInOut 3s infinite;
+    /*-fx-background-size: contain;*/
+}

@@ -1,0 +1,65 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.CheckBox?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.PasswordField?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.effect.Bloom?>-->
+<!--<?import javafx.scene.effect.ColorAdjust?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+
+<!--<AnchorPane focusTraversable="true" prefHeight="458.0" prefWidth="600.0" styleClass="root" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.ims.controller.LoginController">-->
+<!--   <children>-->
+
+<!--      <Label layoutX="264.0" layoutY="14.0" prefHeight="44.0" prefWidth="90.0" styleClass="login" text="LOGIN" textFill="WHITE">-->
+<!--         <font>-->
+<!--            <Font name="Calibri" size="34.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Label layoutX="160.0" layoutY="64.0" opacity="0.94" text="Please enter your username and password" textFill="#c9b3b3">-->
+<!--         <font>-->
+<!--            <Font size="15.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <TextField fx:id="username" alignment="CENTER" cache="true" centerShape="false" focusTraversable="false" layoutX="180.0" layoutY="99.0" prefHeight="46.0" prefWidth="258.0" promptText="username" styleClass="userName">-->
+<!--         <effect>-->
+<!--            <ColorAdjust />-->
+<!--         </effect></TextField>-->
+
+<!--      <Label layoutX="245.0" layoutY="205.0" styleClass="forgotPassword" text="Forgot Password?" textFill="#ddd5d5">-->
+<!--         <font>-->
+<!--            <Font size="15.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Button fx:id="login" layoutX="255.0" layoutY="231.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="32.0" prefWidth="90.0" styleClass="loginButton" stylesheets="@../../../../../style.css" text="LOGIN" />-->
+
+<!--      <CheckBox fx:id="showPasswordCheckBox" layoutX="440.0" layoutY="196.0" mnemonicParsing="false" opacity="0.0" styleClass="checkBox" stylesheets="@../../../../../style.css" />-->
+
+<!--      <ImageView fx:id="closedEye" fitHeight="21.0" fitWidth="28.0" focusTraversable="true" layoutX="446.0" layoutY="172.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">-->
+<!--         <image>-->
+<!--            <Image url="@../../../../../assets/view.png" />-->
+<!--         </image>-->
+<!--         <effect>-->
+<!--            <Bloom threshold="0.89" />-->
+<!--         </effect>-->
+<!--      </ImageView>-->
+<!--      <Button fx:id="Register" layoutX="263.0" layoutY="270.0" mnemonicParsing="false" onAction="#goToRegister" styleClass="register-Button" stylesheets="@../../../../../style.css" text="Register?" />-->
+<!--      <PasswordField fx:id="password" alignment="CENTER" layoutX="180.0" layoutY="159.0" prefHeight="38.0" prefWidth="258.0" promptText="password" styleClass="passwordField" />-->
+<!--      <TextField fx:id="visiblePasswordField" alignment="CENTER" cache="true" focusTraversable="false" layoutX="180.0" layoutY="159.0" prefHeight="46.0" prefWidth="258.0" promptText="password" styleClass="txtPasswordField" stylesheets="@../../../../../style.css">-->
+<!--         <effect>-->
+<!--            <ColorAdjust />-->
+<!--         </effect>-->
+<!--      </TextField>-->
+<!--      <Label layoutX="292.0" layoutY="309.0" text="Or?" textFill="WHITE" />-->
+<!--      <ImageView fitHeight="46.0" fitWidth="60.0" focusTraversable="true" layoutX="279.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">-->
+<!--         <image>-->
+<!--            <Image url="@../../../../../assets/google-icon.png" />-->
+<!--         </image>-->
+<!--      </ImageView>-->
+
+<!--   </children>-->
+<!--</AnchorPane>-->
