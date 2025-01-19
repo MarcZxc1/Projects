@@ -10,14 +10,23 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1300.0" styleClass="Dashboard" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.ims.controller.DashboardController">
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1305.0" styleClass="Dashboard" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.ims.controller.DashboardController">
    <children>
-      <AnchorPane focusTraversable="true" layoutX="-18.0" layoutY="19.0" prefHeight="631.0" prefWidth="44.0" style="-fx-background-radius: 30; -fx-border-radius: 20;" styleClass="sidePanel" stylesheets="@../../../../../style.css">
+      <AnchorPane focusTraversable="true" layoutX="-18.0" layoutY="19.0" prefHeight="631.0" prefWidth="46.0" style="-fx-background-radius: 30; -fx-border-radius: 20;" styleClass="sidePanel" stylesheets="@../../../../../style.css">
          <children>
-            <Button cancelButton="true" layoutX="25.0" layoutY="63.0" mnemonicParsing="false" onAction="#home" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: transparent;" styleClass="home-Button" stylesheets="@../../../../../style.css" textFill="WHITE" />
-            <Button fx:id="switchToSalesManagement" layoutX="25.0" layoutY="126.0" mnemonicParsing="false" onAction="#goToSalesMngmt" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: transparent;" styleClass="sales-ManagementBtn" stylesheets="@../../../../../style.css" textFill="WHITE" />
-            <Button layoutX="28.0" layoutY="184.0" mnemonicParsing="false" onAction="#goToReturnMngmnt" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: transparent;" styleClass="return-MngmntBtn" stylesheets="@../../../../../style.css" />
-            <Button layoutX="28.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToUserMngmnt" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: transparent;" styleClass="user-MngmntBtn" stylesheets="@../../../../../style.css" />
+            <Button cancelButton="true" layoutX="20.0" layoutY="24.0" mnemonicParsing="false" onAction="#home" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: transparent;" styleClass="home-Button" stylesheets="@../../../../../style.css" textFill="WHITE" />
+            <Button fx:id="switchToSalesManagement" layoutX="20.0" layoutY="66.0" mnemonicParsing="false" onAction="#goToSalesMngmt" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: transparent;" styleClass="sales-ManagementBtn" stylesheets="@../../../../../style.css" textFill="WHITE" />
+            <Button layoutX="23.0" layoutY="104.0" mnemonicParsing="false" onAction="#goToReturnMngmnt" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: transparent;" styleClass="return-MngmntBtn" stylesheets="@../../../../../style.css" />
+            <Button layoutX="23.0" layoutY="145.0" mnemonicParsing="false" onAction="#goToUserMngmnt" prefHeight="0.0" prefWidth="30.0" style="-fx-background-color: transparent;" styleClass="user-MngmntBtn" stylesheets="@../../../../../style.css" />
+            <Button layoutX="20.0" layoutY="226.0" mnemonicParsing="false" onAction="#goToOrderMngmnt" prefHeight="32.0" prefWidth="36.0" styleClass="orderManagement" stylesheets="@../../../../../style.css" />
+            <Button layoutX="20.0" layoutY="270.0" mnemonicParsing="false" onAction="#goToSupplierMngmnt" prefHeight="46.0" prefWidth="36.0" styleClass="supplierManagement" stylesheets="@../../../../../style.css" />
+            <Button layoutX="17.0" layoutY="316.0" mnemonicParsing="false" onAction="#goToInventoryTracking" prefHeight="39.0" prefWidth="42.0" styleClass="inventoryTracking" stylesheets="@../../../../../style.css" />
+            <Button layoutX="19.0" layoutY="365.0" mnemonicParsing="false" onAction="#goToReportingAnalytics" prefHeight="39.0" prefWidth="36.0" styleClass="ReportingAnalytics" stylesheets="@../../../../../style.css" />
+            <Button layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#goToFinancialMngmnt" prefHeight="39.0" prefWidth="36.0" styleClass="financialManagement" stylesheets="@../../../../../style.css" />
+            <Button layoutX="20.0" layoutY="455.0" mnemonicParsing="false" onAction="#goToSecurityBackup" prefHeight="39.0" prefWidth="36.0" styleClass="securityBackup" stylesheets="@../../../../../style.css" />
+            <Button layoutX="20.0" layoutY="500.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="46.0" prefWidth="36.0" styleClass="settings" stylesheets="@../../../../../style.css" />
+            <Button layoutX="23.0" layoutY="546.0" mnemonicParsing="false" onAction="#goToIntegrations" prefHeight="39.0" prefWidth="30.0" styleClass="integrations" stylesheets="@../../../../../style.css" />
+            <Button layoutX="20.0" layoutY="186.0" mnemonicParsing="false" onAction="#goToProductMngmnt" prefHeight="32.0" prefWidth="36.0" styleClass="ProductManagement" stylesheets="@../../../../../style.css" />
          </children></AnchorPane>
       <MenuBar layoutX="-2.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="22.0" prefWidth="1307.0" style="-fx-background-color: ECECEC; -fx-border-color: ECECEC;" styleClass="menu-Bar" stylesheets="@../../../../../style.css">
         <menus>
@@ -41,7 +50,7 @@
             <Insets bottom="-20.0" top="-30.0" />
          </padding>
       </MenuBar>
-      <Pane fx:id="paneContainer" layoutX="50.0" layoutY="22.0" prefHeight="631.0" prefWidth="1261.0" stylesheets="@../../../../../style.css">
+      <Pane fx:id="paneContainer" layoutX="49.0" layoutY="22.0" prefHeight="631.0" prefWidth="1263.0" stylesheets="@../../../../../style.css">
          <children>
             <Label layoutX="490.0" layoutY="36.0" prefHeight="46.0" prefWidth="253.0" text="This is Dashboard" textFill="WHITE">
                <font>

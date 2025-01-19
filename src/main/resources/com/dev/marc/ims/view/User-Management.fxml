@@ -9,6 +9,6 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.dev.marc.ims.controller.DashboardController"
-            prefHeight="631.0" prefWidth="1233.0">
+            prefHeight="650.0" prefWidth="1305.0">
 
 </AnchorPane>

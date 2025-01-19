@@ -74,9 +74,6 @@ public class LoginController {
 		}
 	}
 
-
-
-
 	private Image loadImageSafely(String path) {
 		try {
 			Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(path)));

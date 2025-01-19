@@ -47,38 +47,76 @@ public class DashboardController implements Initializable{
 
 	@FXML
 	public void home(ActionEvent event) throws IOException {
-		loginController.switchToDashboard(event);
-	}
+		loginController.switchToDashboard(event);}
 
 	@FXML
 	public void goToSalesMngmt(ActionEvent event) throws IOException {
 		TabSwitch.switchTab(paneContainer, VIEW_PATH +
-				"Sales-Management.fxml", 1300, 650, true);
-	}
+				"Sales-Management.fxml", 1300, 650, true);}
 
 	@FXML
 	public void goToUserMngmnt(ActionEvent event) throws IOException {
 		TabSwitch.switchTab(paneContainer, VIEW_PATH +
-				"User-Management.fxml", 1300, 650, true);
-	}
+				"User-Management.fxml", 1300, 650, true);}
 
 
 	@FXML
 	public void goToReturnMngmnt(ActionEvent event) throws IOException {
 		TabSwitch.switchTab(paneContainer, VIEW_PATH +
-				"Returns-Management.fxml", 1300, 650, true);
+				"Returns-Management.fxml", 1300, 650, true);}
 
-	}
+	@FXML
+	public void goToProductMngmnt(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Product-Management.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToOrderMngmnt(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Order-Management.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToSupplierMngmnt(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Supplier-Management.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToInventoryTracking(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Inventory-Tracking.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToReportingAnalytics(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Reporting and Analytics.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToFinancialMngmnt(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Financial-Management.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToSecurityBackup(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Security-Backup.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToSettings(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Settings.fxml", 1300, 650, true);}
+
+	@FXML
+	public void goToIntegrations(ActionEvent event) throws IOException {
+		TabSwitch.switchTab(paneContainer, VIEW_PATH +
+				"Integrations.fxml", 1300, 650, true);}
+
 	@FXML
 	public void backToLogin(ActionEvent event) throws IOException {
 		Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
 		SceneSwitcher sceneSwitcher = new SceneSwitcher();
 		sceneSwitcher.switchScene(stage, VIEW_PATH + "Login.fxml",
-				500, 600, false);
-	}
+				500, 600, false);}
 
 
 	@Override
-		public void initialize(URL url, ResourceBundle resourceBundle) {
-		}
-	}
+		public void initialize(URL url, ResourceBundle resourceBundle) {}}

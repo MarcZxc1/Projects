@@ -20,7 +20,7 @@
 .root {
     -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
     -fx-animation: fadeInOut 3s infinite;
-     display: flex;
+    display: flex;
 }
 /* Universal Button Style */
 /* Universal Button Style */
@@ -129,7 +129,16 @@
 
 /* Dashboard Background */
 .Dashboard {
-    -fx-background-color: linear-gradient(to bottom, #282722, #1e3948);
+    -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-animation: fadeInOut 3s infinite;
+}
+
+.Pane{
+    -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
+    -fx-margin-top: 10px;
     -fx-text-fill: white;
     -fx-font-size: 20px;
     -fx-transition: all 0.3s ease-in-out;
@@ -137,6 +146,19 @@
 }
 
 /* Register Button */
+
+
+/* Side Panel */
+.sidePanel {
+    -fx-background-color: linear-gradient(to bottom, #08375e, #1f4565);
+    -fx-background-insets: 0;
+    -fx-border-style: solid;
+    -fx-border-width: 4px;
+    -fx-font-size: 20px;
+    -fx-border-color:  linear-gradient(to bottom, #08375e, #1f4565);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
 .register-Button {
     -fx-background-color: transparent;
     -fx-text-fill: white;
@@ -148,20 +170,7 @@
 
 .register-Page{
     -fx-background-color: linear-gradient(to bottom, #282722, #1e3948);
-    -fx-animation: fadeInOut 3s infinite; /* Fade in and out animation */
-
-
-}
-
-/* Side Panel */
-.sidePanel {
-    -fx-background-color: linear-gradient(to bottom, #08375e, #1f4565);
-    -fx-background-insets: 0;
-    -fx-border-style: solid;
-    -fx-border-width: 4px;
-    -fx-font-size: 20px;
-    -fx-border-color:  linear-gradient(to bottom, #08375e, #1f4565);
-    -fx-transition: all 0.3s ease-in-out;
+    -fx-animation: fadeInOut 3s infinite;
 }
 
 .home-Button {
@@ -225,13 +234,105 @@
 }
 
 .Sales-ManagementPage{
-    -fx-background-color: #10557c;
+    -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
     -fx-animation: fadeInOut 3s infinite;
     /*-fx-background-size: contain;*/
 }
 
 .Return-ManagementPage{
-    -fx-background-color: linear-gradient(to bottom, #706637, #10557c);
+    -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
     -fx-animation: fadeInOut 3s infinite;
     /*-fx-background-size: contain;*/
+}
+
+.ProductManagement {
+    -fx-background-image: url('assets/cubes.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-image-rendering: -webkit-optimize-contrast;
+    -fx-image-rendering: crisp-edges;
+    -fx-image-rendering: pixelated;
+}
+
+.orderManagement {
+    -fx-background-image: url('assets/orders.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.supplierManagement{
+    -fx-background-image: url('assets/supplier.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.inventoryTracking{
+    -fx-background-image: url('assets/inventory-tracking.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.ReportingAnalytics{
+    -fx-background-image: url('assets/reporting-analytics.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.financialManagement{
+    -fx-background-image: url('assets/financial-management.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.securityBackup{
+    -fx-background-image: url('assets/security-backup.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+.settings{
+    -fx-background-image: url('assets/settings.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.integrations{
+    -fx-background-image: url('assets/integration.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
 }
