@@ -5,7 +5,11 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="650.0" prefWidth="1305.0" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.ims.controller.DashboardController">
+<AnchorPane prefHeight="650.0" prefWidth="1305.0"
+            stylesheets="@../../../../../style.css"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.dev.marc.ims.controller.DashboardController">
    <children>
       <Label layoutX="497.0" layoutY="24.0" prefHeight="46.0" prefWidth="331.0" text="Reporting &amp; Analytics" textFill="WHITE">
          <font>

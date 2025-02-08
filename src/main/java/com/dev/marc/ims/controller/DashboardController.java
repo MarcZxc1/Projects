@@ -1,17 +1,20 @@
 package com.dev.marc.ims.controller;
 
-import com.almasb.fxgl.entity.action.Action;
-import com.dev.marc.ims.util.SceneSwitcher;
-import com.dev.marc.ims.util.TabSwitch;
+import com.dev.marc.ims.utils.ImageUploader;
+import com.dev.marc.ims.utils.SceneSwitcher;
+import com.dev.marc.ims.utils.TabSwitch;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,29 +23,24 @@ import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable{
 	private static final String ASSETS_PATH = "/assets/";
-	private static final String VIEW_PATH = "/com/dev/marc/ims/view/";
+	public static final String VIEW_PATH = "/com/dev/marc/ims/view/";
 
 	@FXML
 	private Button bt;
 
 	@FXML
+	private Button uploadButton;
+
+	@FXML
+	private ImageView imageView;
+
+	@FXML
 	public Pane paneContainer;
-
-	@FXML
-	private Button homeBtn;
-
-	@FXML
-	private Button SalesMngmntBtn;
-
-	@FXML
-	private Button returnMngmntBtn;
-
-	@FXML
-	private Button userMngmntBtn;
 
 	@FXML
 	private MenuBar menuBar;
 
+	ImageUploader imageUploader = new ImageUploader();
 	LoginController loginController = new LoginController();
 
 	@FXML
@@ -69,6 +67,21 @@ public class DashboardController implements Initializable{
 	public void goToProductMngmnt(ActionEvent event) throws IOException {
 		TabSwitch.switchTab(paneContainer, VIEW_PATH +
 				"Product-Management.fxml", 1300, 650, true);}
+	//Product methods
+		public void ImageUpload(ActionEvent event) throws IOException {
+			// Create a FileChooser
+			FileChooser fileChooser = new FileChooser();
+			fileChooser.getExtensionFilters().add(
+					new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg")
+			);
+
+			File file = fileChooser.showOpenDialog(null); // Replace null with your Stage if needed
+			if (file != null) {
+				Image image = new Image(file.toURI().toString());
+				imageView.setImage(image);
+		}
+	}
+
 
 	@FXML
 	public void goToOrderMngmnt(ActionEvent event) throws IOException {
@@ -91,7 +104,7 @@ public class DashboardController implements Initializable{
 				"Reporting and Analytics.fxml", 1300, 650, true);}
 
 	@FXML
-	public void goToFinancialMngmnt(ActionEvent event) throws IOException {
+	public void goToFinancialMngmnt(ActionEvent BURAT) throws IOException {
 		TabSwitch.switchTab(paneContainer, VIEW_PATH +
 				"Financial-Management.fxml", 1300, 650, true);}
 

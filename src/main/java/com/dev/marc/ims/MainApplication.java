@@ -1,6 +1,6 @@
 package com.dev.marc.ims;
 
-import com.dev.marc.ims.util.BackgroundMusicPlayer;
+import com.dev.marc.ims.utils.BackgroundMusicPlayer;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -17,7 +17,7 @@ public class MainApplication extends javafx.application.Application {
 
 	@Override
 	public void start(Stage stage) {
-		try {
+		try {;
 
 			BackgroundMusicPlayer.getInstance().playMusic(MUSIC_PATH, true);
 			Parent root = FXMLLoader.load(getClass().getResource(MAIN_VIEW));

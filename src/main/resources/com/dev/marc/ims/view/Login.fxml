@@ -35,7 +35,7 @@
                 <Font size="15.0" />
             </font>
         </Label>
-        <Button fx:id="login" layoutX="198.0" layoutY="291.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="32.0" prefWidth="90.0" style="-fx-background-radius: 20;" styleClass="loginButton" stylesheets="@../../../../../style.css" text="LOGIN" />
+        <Button fx:id="login" layoutX="198.0" layoutY="291.0" mnemonicParsing="false" onAction="#Login" prefHeight="32.0" prefWidth="90.0" style="-fx-background-radius: 20;" styleClass="loginButton" stylesheets="@../../../../../style.css" text="LOGIN" />
 
         <CheckBox fx:id="showPasswordCheckBox" layoutX="376.0" layoutY="234.0" mnemonicParsing="false" opacity="0.0" styleClass="checkBox" stylesheets="@../../../../../style.css" />
 

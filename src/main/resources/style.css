@@ -153,6 +153,7 @@
     -fx-background-color: linear-gradient(to bottom, #08375e, #1f4565);
     -fx-background-insets: 0;
     -fx-border-style: solid;
+    -fx-width: 10%;
     -fx-border-width: 4px;
     -fx-font-size: 20px;
     -fx-border-color:  linear-gradient(to bottom, #08375e, #1f4565);
@@ -335,4 +336,30 @@
     -fx-background-color: transparent;
     -fx-border-radius: 0;
     -fx-border-color: transparent;
+}
+
+/*Product Management section*/
+.table-view {
+    -fx-background-color: #d0cccc;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+
+}
+.column-header{
+    -fx-background-color: blue;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: lightblue;
+}
+
+.table-row-cell:even { -fx-background-color: lightblue }
+
+.searchBtn{
+    -fx-background-image: url("assets/search.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
 }

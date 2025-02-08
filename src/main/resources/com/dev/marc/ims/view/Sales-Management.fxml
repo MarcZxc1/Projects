@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="returnMngnt" prefHeight="631.0" prefWidth="1233.0" styleClass="Sales-ManagementPage" stylesheets="@../../../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.marc.ims.controller.DashboardController">
    <children>
-      <Label layoutX="361.0" layoutY="66.0" prefHeight="68.0" prefWidth="512.0" text="SALES MANAGEMENT" textFill="WHITE">
+      <Label layoutX="460.0" layoutY="20.0" prefHeight="68.0" prefWidth="314.0" text="SALES MANAGEMENT" textFill="WHITE">
          <font>
-            <Font size="46.0" />
+            <Font size="31.0" />
          </font>
       </Label>
+      <PieChart layoutX="37.0" layoutY="88.0" />
+      <TableView layoutX="699.0" layoutY="79.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

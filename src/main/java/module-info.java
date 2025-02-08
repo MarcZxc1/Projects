@@ -11,6 +11,9 @@ module com.dev.marc.ims {
 	requires eu.hansolo.tilesfx;
 	requires com.almasb.fxgl.all;
 	requires javafx.media;
+	requires com.google.zxing;
+	requires java.desktop;
+	requires java.sql;
 
 	opens com.dev.marc.ims to javafx.fxml;
 	exports com.dev.marc.ims;

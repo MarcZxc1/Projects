@@ -1,9 +1,7 @@
 package com.dev.marc.ims.controller;
 
-import com.dev.marc.ims.util.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 

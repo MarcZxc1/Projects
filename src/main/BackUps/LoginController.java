@@ -1,7 +1,7 @@
 package com.dev.marc.ims.controller;
 
-import com.dev.marc.ims.util.PasswordVisibilityHandler;
-import com.dev.marc.ims.util.SceneSwitcher;
+import com.dev.marc.ims.utils.PasswordVisibilityHandler;
+import com.dev.marc.ims.utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
