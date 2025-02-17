@@ -1,11 +1,16 @@
 package com.dev.marc.ims.model;
 
-public class Product {
+import java.sql.Timestamp;
 
+public class Product {
+	private int id;
 	private String name;
 	private String sku; // stands for Stock Keeping Unit
 	private String category;
 	private double price;
+	private Timestamp createdAt; // ✅ Use Timestamp instead of String
+	private Timestamp updatedAt; // ✅ Use Timestamp instead of String
+
 	private String description;
 	private int stockLevel;
 	private int recordPoint;
@@ -14,20 +19,48 @@ public class Product {
 	private String  barCode;
 	private String imagePath;
 
-	public Product(String name, String sku, String category, double price, String description,
+	public Product(int productID, String name, String sku, String category, double price, String description,
 				   int stockLevel, int recordPoint, int maxStockThreshold, String supplier,
 				   String barCode, String imagePath){
+		this.id = productID;
 		this.name = name;
 		this.sku = sku;
 		this.category = category;
 		this.price = price;
-		this.description = description;
+//		this.description = description;
 		this.stockLevel = stockLevel;
-		this.recordPoint = recordPoint;
-		this.maxStockThreshold = maxStockThreshold;
-		this.supplier = supplier;
-		this.barCode = barCode;
-		this.imagePath = imagePath;
+//		this.recordPoint = recordPoint;
+//		this.maxStockThreshold = maxStockThreshold;
+//		this.supplier = supplier;
+//		this.barCode = barCode;
+//		this.imagePath = imagePath;
+	}
+
+	public Product(int id, String name, String sku, String category, double price,
+				   Timestamp createdAt, Timestamp updatedAt){
+		this.id = id;
+		this.name = name;
+		this.sku = sku;
+		this.category = category;
+		this.price = price;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+//		this.description = description;
+//		this.stockLevel = stockLevel;
+
+//		this.recordPoint = recordPoint;
+//		this.maxStockThreshold = maxStockThreshold;
+//		this.supplier = supplier;
+//		this.barCode = barCode;
+//		this.imagePath = imagePath;
+	}
+
+	public Integer getId(){
+		return id;
+	}
+
+	public void setProductID(int productID){
+		this.id = productID;
 	}
 
 	public String getName(){
@@ -56,6 +89,8 @@ public class Product {
 	public void setPrice(double price){
 		this.price = price;
 	}
+	public Timestamp getCreatedAt() {return createdAt;}
+	public Timestamp getUpdatedAt() {return updatedAt;}
 	public String getDescription(){
 		return description;
 	}

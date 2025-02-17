@@ -20,6 +20,8 @@
 .root {
     -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
     -fx-animation: fadeInOut 3s infinite;
+    /*-fx-font-size: 14px;*/
+
     display: flex;
 }
 /* Universal Button Style */
@@ -131,7 +133,6 @@
 .Dashboard {
     -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
     -fx-text-fill: white;
-    -fx-font-size: 20px;
     -fx-transition: all 0.3s ease-in-out;
     -fx-animation: fadeInOut 3s infinite;
 }
@@ -140,7 +141,6 @@
     -fx-background-color: linear-gradient(to bottom, #282722, #10557c);
     -fx-margin-top: 10px;
     -fx-text-fill: white;
-    -fx-font-size: 20px;
     -fx-transition: all 0.3s ease-in-out;
     -fx-animation: fadeInOut 3s infinite;
 }
@@ -363,3 +363,18 @@
     -fx-border-color: transparent;
     -fx-border-radius: 0;
 }
+
+.combo-box{
+    -fx-background-size: 20px;
+}
+
+
+
+
+/*.PDMtxtBox{*/
+/*    -fx-pref-height: 20px;*/
+/*    -fx-pref-width: 100px;*/
+/*}*/
+
+/* styles.css */
+

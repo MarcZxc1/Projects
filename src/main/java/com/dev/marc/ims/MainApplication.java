@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class MainApplication extends javafx.application.Application {
 
-	private static final String MUSIC_PATH = "/audio/AVANGARD.mp3";
+	private static final String MUSIC_PATH = "";
 	private static final String MAIN_VIEW = "/com/dev/marc/ims/view/Login.fxml";
 	private static final String ASSETS_PATH = "/assets/application-icon.png";
 
